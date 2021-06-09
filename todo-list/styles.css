@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #d05fda;
+  background: -webkit-linear-gradient(top left, #d05fda, #72b1f2);
+}
+.container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+.box {
+  display: flex;
+}
+.mybtn {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myinput,
+.myclick {
+  border: none;
+  height: 30px;
+  background: cornsilk;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #292626;
+}
+.myinput:focus {
+  outline: none;
+}
+.myclick {
+  cursor: pointer;
+  width: 30px;
+  color: #ffffff;
+  background: #a300ee;
+  transition: all 0.5s ease;
+}
+.myclick:focus {
+  outline: none;
+}
+.myclick:hover {
+  background: #ffffff;
+  color: #a300ee;
+
+}
+.mylist {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 30px;
+  color: #292626;
+}
+.newdiv {
+  transition: all 0.7s ease;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(240, 214, 228);
+  margin: 5px;
+  background: rgb(245, 237, 245);
+}
+/* make the check mark to go to the ned of the div */
+.newdiv li {
+  flex: 1;
+}
+.check {
+  margin: 5px;
+  height: 25px;
+  width: 25px;
+  border: none;
+  color: #128812;
+  cursor: pointer;
+}
+.check,
+.trash:focus {
+  outline: none;
+}
+.check:hover {
+  background: rgb(228, 188, 196);
+}
+.trash:hover {
+  background: rgb(237, 238, 175);
+}
+.check i {
+  pointer-events: none;
+}
+.trash {
+  margin: 5px;
+  height: 25px;
+  width: 25px;
+  border: none;
+  color: #ee5700;
+  cursor: pointer;
+}
+.trash i {
+  pointer-events: none;
+}
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+.fal {
+  transform: translateY(100px) rotateZ(25deg);
+  opacity: 0;
+}
+
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+ 
+}
+.select {
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+
+}
+select {
+  font-family: "Roboto", sans-serif;
+  color: #7c05b3;
+  cursor: pointer;
+  height: 30px;
+  padding: 5px;
+
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  padding: 5px;
+  background: #a300ee;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.select:hover::after {
+  background: #ffffff;
+  color: #a300ee;
+  
+}
